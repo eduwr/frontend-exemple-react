@@ -1,6 +1,7 @@
 import React, { useRef } from 'react';
-import { Container, SecondSession } from './styles';
+import { Container } from './styles';
 import { Carousel } from '../components/Carousel';
+import { Slider } from '../components/Slider';
 
 const Main: React.FC = () => {
   const secondSessionRef = useRef<HTMLDivElement>(null);
@@ -14,7 +15,7 @@ const Main: React.FC = () => {
   return (
     <Container>
       <Carousel scrollPage={handleScrollPage} />
-      <SecondSession ref={secondSessionRef} />
+      <Slider ref={secondSessionRef} />
     </Container>
   );
 };

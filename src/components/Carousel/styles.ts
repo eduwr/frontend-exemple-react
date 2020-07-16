@@ -40,7 +40,7 @@ export const CarouselNavContainer = styled.div`
   display: flex;
   width: 100%;
   height: 90px;
-  background-color: rgba(69, 69, 69, 0.7);
+  background-color: rgba(70, 70, 70, 0.7);
   z-index: 10;
   align-items: center;
   justify-content: center;
@@ -53,7 +53,6 @@ export const TextWrapper = styled.div`
   justify-content: center;
   padding: 50px;
   align-self: center;
-  background-color: rgba(69, 69, 69, 0.1);
   z-index: 100;
 `;
 
@@ -70,11 +69,13 @@ export const NavButton = styled.button<NavButtonProps>`
   border: 10px solid
     ${(props) => (props.active ? 'rgb(254, 254, 254)' : 'rgb(52, 52, 52)')};
   margin: 0 16px;
+  outline: none;
 `;
 
 export const ArrowBtn = styled.button`
   background-color: transparent;
   border: none;
+  outline: none;
 `;
 
 export const BtnIcon = styled.img`

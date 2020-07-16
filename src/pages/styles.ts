@@ -13,5 +13,5 @@ export const SecondSession = styled.div`
   width: 100%;
   height: 100vh;
   align-items: center;
-  background-color: rgb(70, 70, 70);
+  background-color: #464646;
 `;

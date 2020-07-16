@@ -33,7 +33,7 @@ export const Carousel: React.FC<Props> = ({ scrollPage }) => {
           selected={idx === imageIdx}
           key={img}
           src={img}
-          alt="mountains landscape on background with a man foreground"
+          alt="mountains"
         />
       ))}
       <TextWrapper>
