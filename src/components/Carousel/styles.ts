@@ -29,7 +29,7 @@ interface ImageProps {
 
 export const Image = styled.img<ImageProps>`
   width: auto;
-  max-width: 100%;
+  min-width: 100%;
   height: 100%;
   object-fit: cover;
   background-repeat: no-repeat;
@@ -105,7 +105,7 @@ export const NavButton = styled.button<NavButtonProps>`
 const animateArrow = keyframes`
   0% {
     opacity: 0;
-    transform: translateY(-50px);
+    transform: translateY(-10px);
   }
 
   100% {
@@ -123,7 +123,7 @@ export const ArrowBtn = styled.button`
   outline: none;
   animation-name: ${animateArrow};
   animation-timing-function: linear;
-  animation-duration: 2s;
+  animation-duration: 1.5s;
   animation-iteration-count: infinite;
   z-index: 10;
   @media (max-width: 500px) {
