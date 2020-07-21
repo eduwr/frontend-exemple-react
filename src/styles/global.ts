@@ -4,6 +4,7 @@ export default createGlobalStyle`
 
   #root {
     width: 100%;
+
   }
 
   * {
@@ -21,9 +22,10 @@ export default createGlobalStyle`
     -webkit-font-smoothing: antialiased;
   }
     
-  body, input, button {
+  body, input, button, textarea {
     font-family: Roboto, sans-serif, Arial, Helvetica;
     font-size: 16px;
+    border: none;
   }
   
 
@@ -32,6 +34,8 @@ export default createGlobalStyle`
   }
 
   button {
+    background-color: transparent;
     cursor: pointer;
+    outline: none;
   }
 `;

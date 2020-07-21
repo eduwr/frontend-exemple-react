@@ -15,6 +15,7 @@ import {
   NavButton,
   ArrowBtn,
   BtnIcon,
+  ItemsWrapper,
 } from './styles';
 
 interface Props {
@@ -36,15 +37,17 @@ export const Carousel: React.FC<Props> = ({ scrollPage }) => {
           alt="mountains"
         />
       ))}
-      <TextWrapper>
-        <HeaderText>LOREM IPSUM</HeaderText>
-        <SubHeadingText>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit
-        </SubHeadingText>
+      <ItemsWrapper>
+        <TextWrapper>
+          <HeaderText>LOREM IPSUM</HeaderText>
+          <SubHeadingText>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit
+          </SubHeadingText>
+        </TextWrapper>
         <ArrowBtn onClick={scrollPage}>
           <BtnIcon src={arrowDown} />
         </ArrowBtn>
-      </TextWrapper>
+      </ItemsWrapper>
       <CarouselNavContainer>
         {images.map((img, idx) => {
           return (

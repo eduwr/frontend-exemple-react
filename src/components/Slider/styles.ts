@@ -20,8 +20,8 @@ interface ImageSliderWrapperProps {
 export const ImageSliderWrapper = styled.div<ImageSliderWrapperProps>`
   display: flex;
   position: absolute;
-  transition: transform 300ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
 
+  transition: transform 0.7s ease-in 0.1s;
   @media (min-width: 900px) {
     transform: translateX(
       ${(props) => `-${props.idxBigSlider * 3 * (100 / props.arrayLenght)}%`}
@@ -51,23 +51,19 @@ export const ImageSlider = styled.div`
   }
 `;
 
-interface BtnProps {
-  mobile?: boolean;
-}
-
-export const SliderNavBtn = styled.button<BtnProps>`
-  border-radius: 25px;
-  border: 1px solid green;
-  outline: none;
-  background-color: blue;
+export const ArrowIcon = styled.img`
+  max-width: 100%;
 `;
 
-export const ArrowIcon = styled.img<BtnProps>`
+export const Button = styled.button`
   width: 70px;
   height: 70px;
   border-radius: 35px;
   padding: 10px;
-  transition: all 0.4s ease-in-out 0s;
+  background-color: transparent;
+  border: none;
+
+  transition: background-color 0.4s ease-out 0s;
   &:hover {
     cursor: pointer;
   }
