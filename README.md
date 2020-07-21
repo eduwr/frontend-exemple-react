@@ -1,4 +1,4 @@
-Esse projeto foi criado com [Create React App](https://github.com/facebook/create-react-app).
+## [Repositório](https://github.com/eduwr/frontend-exemple-react)
 
 ## Pré-requisitos
 
